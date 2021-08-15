@@ -31,7 +31,7 @@ app.post("/", function(req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us5.api.mailchimp.com/3.0/lists/90b8ecd2df";
+  const url = "https://us5.api.mailchimp.com/3.0/lists/90b8ecd2df"; 	// This is a disabled key
   const options = {
     method: "POST",
     auth: "abdelrahman46:478c2f3a99e90f0b281bb1f4ca853ab7-us5"
@@ -61,10 +61,3 @@ app.post("/failure", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on port 3000.");
 });
-
-
-// API KEY
-// 478c2f3a99e90f0b281bb1f4ca853ab7-us5
-
-// List ID
-// 90b8ecd2df
